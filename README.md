@@ -37,7 +37,7 @@ If any dependencies are missing, install them via your terminal:
 
 1. Clone this repository or download the script file:
    ```bash
-   git clone [https://github.com/luckisandani7/ReverseIP]
+   git clone https://github.com/luckisandani7/ReverseIP
    cd ReverseIP
    chmod +x run.sh
    ./run.sh
