@@ -71,7 +71,7 @@ cd ReverseIP
 ## 2. Make Script Executable
 
 ```bash
-chmod +x reverse.sh
+chmod +x reverse
 ```
 
 ## 3. Install Dependencies
@@ -97,13 +97,13 @@ pkg install curl python
 Run the tool:
 
 ```bash
-./reverse.sh
+./reverse
 ```
 
 Or:
 
 ```bash
-bash reverse.sh
+bash reverse
 ```
 
 The tool will ask for an IP list:
@@ -229,7 +229,7 @@ MASS-REVERSE-IP/
 # 📊 Example Session
 
 ```text
-$ ./reverse.sh
+$ ./reverse
 
     __ _____   ____                  ________
    / //__  /  / __ \___ _   __      /  _/ __ \
