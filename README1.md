@@ -75,59 +75,19 @@ Designed to work smoothly on **Linux and Termux Android**.
 
 ---
 
-## 🔄 Workflow
-
-```text
-                  ┌─────────────────┐
-                  │    IP LIST      │
-                  │      .TXT       │
-                  └────────┬────────┘
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │   READ TARGET   │
-                  │    ONE BY ONE   │
-                  └────────┬────────┘
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │   CURL REQUEST  │
-                  │   REVERSE IP    │
-                  └────────┬────────┘
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │   JSON RESPONSE │
-                  └────────┬────────┘
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │  PYTHON PARSER  │
-                  │ EXTRACT DOMAINS │
-                  └────────┬────────┘
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │  OUTPUT FILE    │
-                  │   DOMAINS.TXT   │
-                  └─────────────────┘
-```
-
----
-
 # 🚀 Installation
 
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/USERNAME/REPOSITORY.git
-cd REPOSITORY
+git clone https://github.com/luckisandani7/ReverseIP.git
+cd ReverseIP
 ```
 
 ## 2. Make Script Executable
 
 ```bash
-chmod +x reverseip.sh
+chmod +x reverse.sh
 ```
 
 ## 3. Install Dependencies
@@ -153,13 +113,13 @@ pkg install curl python
 Run the tool:
 
 ```bash
-./reverseip.sh
+./reverse.sh
 ```
 
 Or:
 
 ```bash
-bash reverseip.sh
+bash reverse.sh
 ```
 
 The tool will ask for an IP list:
@@ -235,45 +195,6 @@ The terminal also displays the result count:
 [+] 1.1.1.1 <= 4 domain
 [-] 142.250.72.14 <= 0 domain
 ```
-
----
-
-# 🔌 API Integration
-
-The tool communicates with an external reverse-IP API.
-
-The API endpoint is stored in an encoded form inside the script and decoded at runtime.
-
-```bash
-e_api="..."
-api_base=$(echo "$e_api" | base64 -d)
-```
-
-Requests are sent using:
-
-```bash
-curl -s \
-  -H "Accept: application/json" \
-  "${api_base}${target}"
-```
-
-The expected response contains a `result` field.
-
-Example:
-
-```json
-{
-  "result": [
-    "example.com",
-    "www.example.com",
-    "mail.example.com"
-  ]
-}
-```
-
-The Python parser extracts each returned domain and passes the results back to the Bash script.
-
-> **API Notice:** The tool depends on an external API. Availability, response format, rate limits, and database coverage may change at any time.
 
 ---
 
