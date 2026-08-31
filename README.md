@@ -1,4 +1,4 @@
-# Mass Reverse IP Lookup Tool
+# Mass Reverse IP Tool
 
 A simple Bash script for performing **Mass Reverse IP** lookups using a public API. This script accepts a list of IP addresses from a text file and extracts the domains associated with each IP address.
 
