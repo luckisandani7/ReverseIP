@@ -32,3 +32,12 @@ If any dependencies are missing, install them via your terminal:
 * **Ubuntu / Debian / Kali Linux:**
   ```bash
   sudo apt update && sudo apt install bash curl python3 coreutils -y
+
+## 📦 Installation
+
+1. Clone this repository or download the script file:
+   ```bash
+   git clone [https://github.com/luckisandani7/ReverseIP]
+   cd ReverseIP
+   chmod +x run.sh
+   ./run.sh
