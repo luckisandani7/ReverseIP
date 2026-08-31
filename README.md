@@ -48,7 +48,7 @@ Create a text file (e.g., ip.txt) containing your target IP addresses, one IP pe
 
 Example ip.txt:
 ```
-Plaintext
+google.com
 8.8.8.8
 1.1.1.1
 104.21.28.90
