@@ -41,3 +41,14 @@ If any dependencies are missing, install them via your terminal:
    cd ReverseIP
    chmod +x run.sh
    ./run.sh
+
+## 💻 Usage
+1. Prepare Your IP List File
+Create a text file (e.g., ip.txt) containing your target IP addresses, one IP per line.
+
+Example ip.txt:
+```
+Plaintext
+8.8.8.8
+1.1.1.1
+104.21.28.90
