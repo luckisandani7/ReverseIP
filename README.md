@@ -46,9 +46,9 @@ If any dependencies are missing, install them via your terminal:
 Create a text file (e.g., ip.txt) containing your target IP addresses, one IP per line.
 
 Example ip.txt:
-```bash
-google.com
-8.8.8.8
-1.1.1.1
-104.21.28.90
+  ```bash
+  google.com
+  8.8.8.8
+  1.1.1.1
+  104.21.28.90
 
