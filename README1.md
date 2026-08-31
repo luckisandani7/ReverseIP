@@ -37,25 +37,9 @@ Designed to work smoothly on **Linux and Termux Android**.
 
 ## 🖥️ Preview
 
-```text
-    __ _____   ____                  ________
-   / //__  /  / __ \___ _   __      /  _/ __ \
-  / /   / /  / /_/ / _ \ | / /_____ / // /_/ /
- / /___/ /  / _, _/  __/ |/ /_____// // ____/
- /_____/_/  /_/ |_|\___/|___/     /___/_/
-
- MASS REVERSE IP TOOL By Lkey7
-
-[?] Input IP List File: ips.txt
-[?] Save to: result.txt
-
-[+] 8.8.8.8 <= 12 domain
-[+] 1.1.1.1 <= 4 domain
-[-] 192.0.2.1 <= 0 domain
-
-[+] Done! >> result.txt
-[~] Tools Created By Lkey7
-```
+<p align="center">
+  <img src="assets/IMG_20260831_182907.jpg" alt="MASS REVERSE IP TOOL Preview">
+</p>
 
 ---
 
@@ -195,37 +179,6 @@ The terminal also displays the result count:
 [+] 1.1.1.1 <= 4 domain
 [-] 142.250.72.14 <= 0 domain
 ```
-
----
-
-# 🐍 JSON Processing
-
-Python is used to safely parse the API response.
-
-The parser supports:
-
-### Array Response
-
-```json
-{
-  "result": [
-    "example.com",
-    "example.net"
-  ]
-}
-```
-
-### String Response
-
-```json
-{
-  "result": "example.com\nexample.net"
-}
-```
-
-Both formats are converted into individual domain entries.
-
-Invalid JSON responses are ignored to prevent the main process from stopping.
 
 ---
 
