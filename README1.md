@@ -229,7 +229,7 @@ MASS-REVERSE-IP/
 # 📊 Example Session
 
 ```text
-$ ./reverseip.sh
+$ ./reverse.sh
 
     __ _____   ____                  ________
    / //__  /  / __ \___ _   __      /  _/ __ \
