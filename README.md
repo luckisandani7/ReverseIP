@@ -40,7 +40,6 @@ If any dependencies are missing, install them via your terminal:
    git clone https://github.com/luckisandani7/ReverseIP
    cd ReverseIP
    chmod +x run.sh
-   ./run.sh
 
 ## 💻 Usage
 1. Prepare Your IP List File
